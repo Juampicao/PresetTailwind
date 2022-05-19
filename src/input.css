@@ -87,6 +87,10 @@ img {
   
 }
 
+nav {
+   background-color: black ;
+   color: white;
+}
 
 /*------------ Fin Variables Globales para Secciones generales------------ */
 

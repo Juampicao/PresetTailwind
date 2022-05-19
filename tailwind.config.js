@@ -42,7 +42,7 @@ module.exports = {
 
       // Color Normal
       white: "white",
-      black, "black"
+      // black, "black"
     },
   },
   plugins: [],

@@ -564,6 +564,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-transform: uppercase;
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 /* --------------- Inicio Variables Globales para Secciones generales ---------------- */
 
 /* Cambiar desde Tailwind Config para usar con apply  */
@@ -661,12 +666,12 @@ img {
   min-height: 300px;
 }
 
-nav {
-  background-color: black;
-  color: white;
+#menu , a  {
 }
 
-#menu , a  {
+nav {
+  background-color: black ;
+  color: white;
 }
 
 /*------------ Fin Variables Globales para Secciones generales------------ */
@@ -736,6 +741,16 @@ img:hover {
 
 .hover\:border-b-4:hover {
   border-bottom-width: 4px;
+}
+
+.hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 550px) {
