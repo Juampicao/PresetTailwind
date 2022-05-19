@@ -1,6 +1,7 @@
 CAMBIAR NOMBRE PROYECTO.
 
 Correr el proyecto: npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch.
+
 Subir a netlify: carpeta Dist - Comando hay que ver npm run tailwind o cual. 
 
 Pasos:
