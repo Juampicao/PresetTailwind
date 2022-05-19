@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* --------------- Inicio Variables Globales para Secciones generales ---------------- */
+
+/* Cambiar desde Tailwind Config para usar con apply  */
+:root {
+    --PrincipalColorFondo: rgb(154, 17, 17); 
+    --SecondaryColorFondo:rgb(10, 10, 9); 
+
+    --PrincipalTexto: black; 
+    --PrincipalTexto: white; 
+
+    --parrafoTamañoPrincipal: 1rem; 
+    --parrafoTamañoSecundario: 1.5rem;
+
+    --tamañoTituloPrincipal: 1rem;
+    --tamañoTituloSecundario: 1.5rem; 
+
+    --buttonColorPrimario: rgb(0, 0, 255); 
+    --buttonColorSecundario: white;
+
+    --buttonHoverPrimario: black;
+    --buttonHoverSecundario: red;
+
+    --buttonLetraPrimaria: white;
+    --buttonLetraSecundaria: black;
+
+
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: var(--PrincipalColorFondo);
+  font-size: var(--parrafoTamañoSecundario);
+  animation: efectoGeneralBody 3s; 
+  @apply tracking-wide
+}
+
+h1 {
+   @apply uppercase text-2xl p-2;
+}
+
+h2 { 
+   @apply uppercase text-xl pl-2 p-1  ;
+}
+
+h3 {
+   @apply uppercase text-lg pl-2 p-1;
+}
+
+
+p {
+   /* font-size: var(--parrafoTamañoPrincipal) */
+   @apply normal-case text-sm text-letterPrimary; 
+}
+
+
+div,section {
+    @apply uppercase p-2 max-w-7xl;
+}
+
+button {
+ transition-duration: 350ms;
+ @apply 
+ px-10 py-2 rounded-lg 
+bg-buttonPrimary
+text-letterSecondary
+hover:bg-buttonHoverPrimary
+hover:text-letterPrimary
+
+}
+
+img {
+   @apply max-w-md bg-cover 
+}
+
+.min-height {
+   @apply min-h-[300px]
+}
+
+
+
+#menu , a  {
+  
+}
+
+
+/*------------ Fin Variables Globales para Secciones generales------------ */
+
+
+
+
+/* ----------------  INICIO SECCIONES PRINCIPALES ---------------------------- */
+
+/* ----------------  FIN SECCIONES PRINCIPALES ---------------------------- */
+
+
+
+
+
+/* ---------------- INICIO MEDIA QUERIES  ---------------------------- */
+/* @media only screen and (min-width: 650px) and (max-width: 1024px) {
+    section {
+       @apply 
+    }
+} */
+/* ---------------- FIN  MEDIA QUERIES  ---------------------------- */
+
+
+
+/* ------------------Incio Efectos generales del body --------------------- */
+
+@keyframes efectoGeneralBody {
+ 0% {
+ opacity:0;
+ }
+ 25%{
+ opacity:0.33;
+ }
+  25%{
+ opacity:0.66;
+ }
+ 100% {
+ opacity:1;
+ }
+}
+
+/*------------------ Fin Efectos generales del body ----------------------- */
+
+
+
+
+/* ------------------Incio Efectos generales particulares  -----------------*/
+
+/* ---Efecto zoom imagenes ---- */
+ img:hover {
+     transform: scale(1.05);
+     transition-duration: 500ms;  
+   }
+/* - Efecto zoom imagenes ---- */
+
+/* ----------------- Fin Efectos generales particulares  -----------------  */
